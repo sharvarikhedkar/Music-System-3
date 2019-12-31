@@ -1,0 +1,124 @@
+POST
+-------------
+
+http://127.0.0.1:5000/users
+
+{
+	"user_name": "TomCruise",
+	"password": "pass123",
+	"display_name": "TOM",
+	"email_id": "tomcruise@gmail.com",
+	"home_url": "www.tomcruise3.com"
+}
+
+
+GET
+----------
+http://127.0.0.1:5000/users
+
+127.0.0.1:5000/users/TomCruise
+
+DELETE
+----------
+http://127.0.0.1:5000/users/TomCruise
+
+
+PUT
+------
+http://127.0.0.1:5000/users
+
+{
+	"user_name": "dileep1",
+	"password": "pass123",
+	"new_password": "new_password"
+}
+
+
+Tracks
+=========
+
+POST
+----------
+http://127.0.0.1:5100/tracks
+
+{
+	"track_title": "Incomplete",
+	"album_title": "Incomplete",
+	"track_artist": "Backstreet Boys",
+	"track_length": "1720",
+	"media_url": "http://localhost:9000/media/Incomplete.mp3",
+	"album_url": "www.songs.com/media/BackStreetBoys/Incomplete"
+}
+{
+	"track_title": "Despacito",
+	"album_title": "Despacito",
+	"track_artist": "Vida",
+	"track_length": "1700",
+	"media_url": "http://localhost:9000/media/Despacito.mp3",
+	"album_url": "www.songs.com/media/Vida"
+}
+
+{
+	"track_title": "InTheEnd",
+	"album_title": "LinkinPark",
+	"track_artist": "unknown artist",
+	"track_length": "1780",
+	"media_url": "http://localhost:9000/media/intheend.mp3",
+	"album_url": "www.songs.com/media/LinkinPark"
+}
+
+{
+	"track_title": "Familiar",
+	"album_title": "Familiar",
+	"track_artist": "Liam Payne",
+	"track_length": "1780",
+	"media_url": "http://localhost:9000/media/familiar.mp3",
+	"album_url": "www.songs.com/media/Familiar"
+}
+
+{
+	"track_title": "WreckingBall",
+	"album_title": "WreckingBall",
+	"track_artist": "Mily Cyrus",
+	"track_length": "1780",
+	"media_url": "http://localhost:9000/media/WreackingBall.mp3",
+	"album_url": "www.songs.com/media/MilyCyrus"
+}
+
+GET
+-------
+http://127.0.0.1:5000/tracks
+
+
+POST
+-------
+http://127.0.0.1:5000/playlist
+
+{
+	"track_title": "ThousandYears",
+	"user_name": "Twilight",
+	"playlist_title": "Ketty Pery",
+	"description": "1700"
+}
+
+{
+	"track_title": "InTheEnd",
+	"user_name": "Twilight",
+	"playlist_title": "Ketty Pery",
+	"description": "my fav song"
+}
+
+
+{
+	"track_title": "Familiar",
+	"user_name": "Twilight",
+	"playlist_title": "Ketty Pery",
+	"description": "sharvari fav song"
+}
+
+{
+	"track_title": "WreackingBall",
+	"user_name": "Twilight",
+	"playlist_title": "Ketty Pery",
+	"description": "sharvari fav song 2"
+}
